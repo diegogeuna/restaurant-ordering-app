@@ -23,7 +23,7 @@
                 <form id="payment-form" method="POST">
                     <input type="text" id="name" name="name" placeholder="Enter your name" required/>
                     <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required/>
-                    <input type="text" id="cvv-number" name="cvv-number" placeholder="Enter CVV" inputmode="numeric" maxlength="4" pattern="\d{3,4}" title="The CVV must have 3 to 4 digits."/>
+                    <input type="text" id="cvv-number" name="cvv-number" placeholder="Enter CVV" inputmode="numeric" maxlength="4" pattern="\d{3,4}" title="The CVV must have 3 to 4 digits" required/>
                     <button type="submit" data-id="pay-btn" class="pay-btn">Pay</button>
                 </form>
             </div>

@@ -41,10 +41,14 @@ document.addEventListener("click", function(e) {
 
 paymentForm.addEventListener("submit", function(e) {
     e.preventDefault();
-    const name = nameInput.value
+    const name = nameInput.value;
     paymentContainer.style.display = "none";
     orderContainerEl.innerHTML = `
         <p class="payment-accepted">Thanks, ${name}! <br/>Your order is on its way!</p>`;
+    orderListArray = [];
+    document.querySelectorAll('input').forEach(function(input) {
+        input.value = ``;
+    });
 })
 
 function findItem(arr, e) {
